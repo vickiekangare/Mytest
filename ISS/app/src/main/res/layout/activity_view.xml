@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.dirgha03.iss.ISSDisplayActivity"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal|center"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center_horizontal|center"
+        android:background="#3498db"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/etIss"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/linearLayout2"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:gravity="center"
+            android:text="@string/Item_details"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="150dp"
+                android:layout_height="128dp"
+                android:layout_gravity="right"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="15dp"
+                app:srcCompat="@drawable/phcolor1" />
+
+
+
+
+            <TableLayout
+                android:id="@+id/tableLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/background_tborder">
+
+                <TextView
+                    android:id="@+id/tvIteminfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="@string/ITEM_INFORMATION"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+
+                    android:textStyle="bold" />
+
+
+
+                <TableRow
+                    android:id="@+id/trName"
+                    style="@style/tbRow">
+
+                    <TextView
+                        android:id="@+id/tvNamel"
+                        style="@style/tvDisplay"
+                        android:text="@string/Name"
+                        />
+
+                    <TextView
+                        android:id="@+id/tvName"
+                        style="@style/tvDisplay"
+                        android:text="TextView" />
+
+                </TableRow>
+
+
+                <TableRow
+                    android:id="@+id/trDescription"
+                    style="@style/tbRow">
+
+                    <TextView
+                        android:id="@+id/tvDescl"
+                        style="@style/tvDisplay"
+                        android:text="@string/Description" />
+
+                    <TextView
+                        android:id="@+id/tvDesc"
+                        style="@style/tvDisplay"
+                        android:text="TextView" />
+
+                </TableRow>
+
+
+                <TableRow
+                    android:id="@+id/trColor"
+                    style="@style/tbRow">
+
+                    <TextView
+                        android:id="@+id/tvColorL"
+                        style="@style/tvDisplay"
+                        android:text="@string/Color" />
+
+                    <TextView
+                        android:id="@+id/tvColor"
+                        style="@style/tvDisplay"
+                        android:text="TextView" />
+                </TableRow>
+
+
+                <TableRow
+                    android:id="@+id/trPdate"
+                    style="@style/tbRow">
+
+
+                    <TextView
+                        android:id="@+id/tvPdateL"
+                        style="@style/tvDisplay"
+                        android:text="@string/Purch_Date" />
+
+                    <TextView
+                        android:id="@+id/tvPdate"
+                        style="@style/tvDisplay"
+                        android:text="TextView"
+                        android:textSize="18sp" />
+                </TableRow>
+
+
+                <TableRow
+                    android:id="@+id/trBill"
+                    style="@style/tbRow">
+
+                    <TextView
+                        android:id="@+id/tvBillL"
+                        style="@style/tvDisplay"
+                        android:text="@string/Bill_No" />
+
+                    <TextView
+                        android:id="@+id/tvBill"
+                        style="@style/tvDisplay"
+                        android:text="TextView"
+                        android:textSize="18sp" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/trQuntity"
+                    style="@style/tbRow">
+
+
+                    <TextView
+                        android:id="@+id/tvQuntityL"
+                        style="@style/tvDisplay"
+                        android:text="@string/Quntity" />
+
+                    <TextView
+                        android:id="@+id/tvQuntity"
+                        style="@style/tvDisplay"
+                        android:text="TextView"
+                        android:textSize="18sp" />
+                </TableRow>
+
+            </TableLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp">
+
+
+
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingRight="2dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:paddingBottom="3dp"
+        android:background="@drawable/background_tborder">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/MANUFACTURER_INFORMATION"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_gravity="center_horizontal|center"/>
+
+
+
+
+        <TableRow
+            android:id="@+id/trMname"
+            style="@style/tbRow">
+
+            <TextView
+                android:id="@+id/tvNameL"
+                style="@style/tvDisplay"
+                android:text="@string/Name" />
+
+            <TextView
+                android:id="@+id/tvMname"
+                style="@style/tvDisplay"
+                android:text="TextView" />
+
+
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/trMof"
+            style="@style/tbRow">
+
+
+            <TextView
+                android:id="@+id/tvMadeofL"
+                style="@style/tvDisplay"
+                android:text="@string/Made_of" />
+
+            <TextView
+                android:id="@+id/tvMadeof"
+                style="@style/tvDisplay"
+                android:text="TextView" />
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/trCost"
+            style="@style/tbRow">
+
+
+            <TextView
+                android:id="@+id/tvCostL"
+                style="@style/tvDisplay"
+                android:text="@string/Cost" />
+
+            <TextView
+                android:id="@+id/tvCost"
+                style="@style/tvDisplay"
+                android:text="TextView"
+                android:textSize="18sp" />
+
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/trWarrenty"
+            style="@style/tbRow">
+
+
+            <TextView
+                android:id="@+id/tvWarrentyL"
+                style="@style/tvDisplay"
+                android:text="@string/Warrenty" />
+
+            <TextView
+                android:id="@+id/tvWarrenty"
+                style="@style/tvDisplay"
+                android:text="TextView" />
+
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/trMdate"
+            style="@style/tbRow">
+
+
+            <TextView
+                android:id="@+id/tvMdateL"
+                style="@style/tvDisplay"
+                android:text="@string/Date" />
+
+            <TextView
+                android:id="@+id/tvMdate"
+                style="@style/tvDisplay"
+                android:text="TextView" />
+
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/trProperty"
+            style="@style/tbRow">
+
+
+            <TextView
+                android:id="@+id/tvPropertyL"
+                style="@style/tvDisplay"
+                android:text="@string/properties" />
+
+            <TextView
+                android:id="@+id/tvProperty"
+                style="@style/tvDisplay"
+                android:text="TextView" />
+        </TableRow>
+
+       </TableLayout>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>
+
+</LinearLayout>

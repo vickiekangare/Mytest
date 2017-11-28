@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    tools:context="com.example.dirgha03.iss.ISSAddActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center"
+        android:orientation="vertical"
+        android:background="#3498db"
+        android:id="@+id/linearLayout2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true">
+
+        <TextView
+            android:id="@+id/etIss"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/linearLayout2"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:gravity="center"
+            android:text="@string/Item_Storage_System"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="46dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true">
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="192dp"
+            android:layout_height="178dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal|center"
+            android:src="@drawable/logo"
+            app:border_color="#3498db"
+            app:border_width="2dp"
+            android:layout_weight="0.10" />
+
+
+        <Button
+            android:id="@+id/btnAdd"
+            style="@style/btnStyle"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/background_title_style"
+            android:onClick="onclick"
+            android:text="@string/ADD_ITEM" />
+
+        <Button
+            android:id="@+id/btnView"
+            android:background="@drawable/background_title_style"
+            style="@style/btnStyle"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
+            android:onClick="onClick"
+            android:text="View Item" />
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

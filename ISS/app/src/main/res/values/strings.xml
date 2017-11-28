@@ -1,0 +1,75 @@
+<resources>
+    <!-- XML Strings-->
+
+    <string name="app_name">ISS</string>
+
+    <!--activity_add-->
+    <string name="Item_Storage_System">Item Storage System</string>
+    <string name="ADD_ITEM">ADD ITEM</string>
+    <string name="VIEW_ITEM">VIEW ITEM</string>
+
+
+    <!-- activity_item-->
+    <string name="activityItem_title">Item Information</string>
+    <string name="item_information">Item Information</string>
+    <string name="enter_name">Enter Name *</string>
+    <string name="enter_decription">Enter Decription</string>
+    <string name="enter_color">Enter color *</string>
+    <string name="purchase_date">Purchase Date</string>
+    <string name="quantity">Qauntity</string>
+    <string name="enter_bill_no">Enter Bill no</string>
+    <string name="correct_quntity">Please Enter correct quntity</string>
+    <string name="name_empty">name is empty</string>
+    <string name="color_empty">color is empty</string>
+    <string name="Enter_quntity">Enter quntity</string>
+    <string name="next">NEXT</string>
+
+
+    <!-- activity_manufacturer-->
+
+    <string name="manufacturer_information">Manufacturer Information</string>
+    <string name="enter_manufacturer">Enter Manufacturer *</string>
+    <string name="enter_made_of">Enter made of *</string>
+    <string name="enter_cost">Enter cost *</string>
+    <string name="warrenty">Warrenty</string>
+    <string name="manufacturing_date">Manufacturing Date</string>
+    <string name="properties">Properties</string>
+    <string name="delicate">delicate</string>
+    <string name="fragile">fragile</string>
+    <string name="hard">hard</string>
+    <string name="strong">strong</string>
+    <string name="Manufacturers_name_is_empty">Manufacturers name is empty</string>
+    <string name="made_of_is_empty">made of is empty</string>
+    <string name="cost_is_empty">cost is empty</string>
+
+
+    <!-- activity_Image-->
+    <string name="Capture_Photo">Capture Photo</string>
+    <string name="snape">Please take a snape of that Item</string>
+    <string name="Success">Item Added Successfully</string>
+    <string name="SUBMIT">SUBMIT</string>
+
+
+
+    <!-- activity_View-->
+    <string name="Item_details">Item details</string>
+    <string name="ITEM_INFORMATION">ITEM INFORMATION</string>
+    <string name="Name">Name :</string>
+    <string name="Description">Description :</string>
+    <string name="Color">Color :</string>
+    <string name="Purch_Date">Purch Date :</string>
+    <string name="Bill_No">Bill No. :</string>
+    <string name="Quntity">Quntity :</string>
+    <string name="MANUFACTURER_INFORMATION">MANUFACTURER INFORMATION</string>
+    <string name="Made_of">Made of :</string>
+    <string name="Cost">Cost :</string>
+    <string name="Warrenty">Warrenty :</string>
+    <string name="Date">Date :</string>
+    <string name="Property">Property :</string>
+    <string name="Item_List">Item List</string>
+
+
+
+
+
+</resources>

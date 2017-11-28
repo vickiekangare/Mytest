@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center_horizontal|center"
+        android:background="#3498db"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/etIss"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/linearLayout2"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:gravity="center"
+            android:text="@string/item_information"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/linearLayout2"
+        android:orientation="vertical"
+        tools:context="com.example.dirgha03.iss.ISSManufacActivity">
+
+        <EditText
+            android:id="@+id/etName"
+            style="@style/etStyle"
+            android:layout_marginTop="20dp"
+
+            android:ems="10"
+            android:hint="@string/enter_name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/etDescription"
+            style="@style/etStyle"
+            android:ems="10"
+
+            android:hint="@string/enter_decription" />
+
+
+        <EditText
+            android:id="@+id/etColor"
+            style="@style/etStyle"
+            android:ems="10"
+            android:hint="@string/enter_color"
+            android:inputType="textPersonName" />
+
+
+        <LinearLayout
+            android:layout_width="306dp"
+            android:layout_height="64dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvPdate"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+
+                android:layout_marginTop="10dp"
+                android:background="#ffffff"
+                android:gravity="left"
+                android:text="@string/purchase_date"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:id="@+id/tvPdate1"
+                android:layout_width="120dp"
+                android:layout_height="44dp"
+                android:paddingLeft="3dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/background_textview"
+                android:textSize="20sp"
+                android:visibility="visible" />
+
+
+            <ImageView
+                android:id="@+id/ivCalender"
+                android:layout_width="51dp"
+                android:layout_height="43dp"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/calendar" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/tvquntity"
+
+                android:layout_width="140dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="1dp"
+                android:layout_marginTop="1dp"
+                android:background="#ffffff"
+                android:padding="2dp"
+                android:text="@string/quantity"
+                android:textSize="18sp"
+                android:visibility="visible" />
+
+
+            <FrameLayout
+                android:layout_width="38dp"
+                android:layout_height="42dp"
+                android:background="#3498db">
+
+                <ImageView
+                    android:id="@+id/ivPlus"
+                    android:layout_width="34dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center"
+                    android:background="#FFFFFF"
+                    app:srcCompat="@drawable/ic_plus" />
+
+            </FrameLayout>
+
+            <EditText
+                android:id="@+id/etQuntity"
+                android:layout_width="82dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/background_textview"
+                android:ems="10"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:gravity="center"
+                android:inputType="textPersonName" />
+
+
+            <FrameLayout
+                android:layout_width="38dp"
+                android:layout_height="42dp"
+                android:background="#3498db">
+
+                <ImageView
+                    android:id="@+id/ivMinus"
+                    android:layout_width="32dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center"
+                    android:background="#FFFFFF"
+                    app:srcCompat="@drawable/ic_minus" />
+
+            </FrameLayout>
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/etBill"
+            style="@style/etStyle"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/enter_bill_no"
+            android:inputType="textPersonName" />
+
+
+        <Button
+            android:id="@+id/btnNext"
+            style="@style/btnStyle"
+            android:layout_below="@+id/etBill"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/background_title_style"
+            android:onClick="click"
+            android:text="@string/next" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+</ScrollView>
