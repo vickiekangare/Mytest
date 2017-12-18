@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dirgha03.customermanagment.CMProductInfo">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#ff6666"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="@string/product_information"
+                    android:textColor="#ffff"
+                    android:textStyle="bold"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+
+
+
+        <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical">
+
+
+
+
+
+
+                    <EditText
+                        android:id="@+id/etName"
+                        style="@style/etStyle"
+                        android:layout_marginTop="30dp"
+                        android:textColorHint="#ffff"
+                        android:hint="@string/name" />
+
+                    <EditText
+                        android:id="@+id/etSeller"
+                        style="@style/etStyle"
+                        android:layout_marginTop="10dp"
+                        android:textColorHint="#ffff"
+                        android:hint="@string/seller" />
+
+                    <EditText
+                        android:id="@+id/etFeachers"
+                        style="@style/etStyle"
+                        android:layout_marginTop="10dp"
+                        android:textColorHint="#ffff"
+                        android:hint="@string/features" />
+
+                    <EditText
+                        android:id="@+id/etImprovements"
+                        style="@style/etStyle"
+                        android:layout_marginTop="10dp"
+                        android:textColorHint="#ffff"
+                        android:hint="@string/improvements" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="40dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/tvExpansetyape"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginTop="5dp"
+                        android:textSize="18sp"
+                        android:text="@string/expense_type" />
+
+                    <Spinner
+                        android:id="@+id/spinner1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@android:drawable/btn_dropdown"
+                        android:layout_marginRight="32dp"
+                        android:spinnerMode="dropdown"
+                        android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/etRecurringexpanse"
+                style="@style/etStyle"
+                android:layout_marginTop="10dp"
+                android:textColorHint="#ffff"
+                android:hint="@string/recurring_expanses" />
+
+            <EditText
+                android:id="@+id/etInstallmentcost"
+                style="@style/etStyle"
+                android:layout_marginTop="10dp"
+                android:textColorHint="#ffff"
+                android:hint="@string/installment_cost" />
+
+            <EditText
+                android:id="@+id/etComments"
+                style="@style/etStyle"
+                android:layout_marginTop="10dp"
+                android:textColorHint="#ffff"
+                android:hint="@string/comments" />
+
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center"
+                style="@style/btnStyle"
+                android:onClick="sub"
+                android:text="Submit" />
+
+
+
+        </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dirgha03.customermanagment.CMInterestInfo">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#ff6666"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="@string/intrest_information"
+                    android:textColor="#ffff"
+                    android:textStyle="bold"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:orientation="vertical">-->
+
+
+            <!--<TextView-->
+                <!--android:id="@+id/tvInterest"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="40dp"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:textSize="18sp"-->
+                <!--android:text="@string/product_information" />-->
+
+
+            <!--<RadioGroup-->
+                <!--android:id="@+id/Info"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:weightSum="2"-->
+                <!--android:layout_marginLeft="45dp">-->
+
+                <!--<RadioButton-->
+                    <!--android:id="@+id/rbYes"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:text="@string/yes" />-->
+
+                <!--<RadioButton-->
+                    <!--android:id="@+id/rbNo"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="25dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:text="@string/no" />-->
+            <!--</RadioGroup>-->
+
+        <!--</LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tvInterest1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="18sp"
+                    android:text="Intreasted in product" />
+
+
+                <RadioGroup
+                    android:id="@+id/Info1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_marginLeft="45dp">
+
+                    <RadioButton
+                        android:id="@+id/rbYes1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/yes" />
+
+                    <RadioButton
+                        android:id="@+id/rbNo1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_weight="1"
+                        android:text="@string/no" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/etExpense"
+                style="@style/etStyle"
+                android:layout_marginTop="10dp"
+                android:textColorHint="#ffff"
+                android:hint="@string/expense" />
+
+            <EditText
+                android:id="@+id/etCost"
+                style="@style/etStyle"
+                android:layout_marginTop="10dp"
+                android:textColorHint="#ffff"
+                android:hint="@string/cost" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="40dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/tvPaytype"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="5dp"
+                    android:textSize="18sp"
+                    android:text="@string/pay_type" />
+
+                <Spinner
+                    android:id="@+id/spinner2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="32dp"
+                    android:layout_weight="1"
+                    android:background="@android:drawable/btn_dropdown"
+                    android:spinnerMode="dropdown" />
+            </LinearLayout>
+
+
+
+            <EditText
+                android:id="@+id/etComment"
+                style="@style/etStyle"
+                android:layout_marginTop="10dp"
+                android:textColorHint="#ffff"
+                android:hint="@string/comments" />
+
+
+            <Button
+                android:id="@+id/btnNext"
+                style="@style/btnStyle"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="30dp"
+                android:onClick="sub"
+                android:text="@string/submit" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

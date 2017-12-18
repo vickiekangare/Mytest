@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dirgha03.customermanagment.CMOrganizationDetails"
+    tools:layout_editor_absoluteX="8dp"
+    tools:layout_editor_absoluteY="8dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="100">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#ff6666"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/organization_details"
+                android:textColor="#ffff"
+                android:textStyle="bold"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/etName"
+                style="@style/etStyle"
+                android:layout_marginTop="30dp"
+                android:textColorHint="#ffff"
+                android:hint="@string/name" />
+
+            <EditText
+                android:id="@+id/etPhone"
+                android:textColorHint="#ffff"
+                style="@style/etStyle"
+                android:hint="@string/phone_no" />
+
+            <EditText
+                android:id="@+id/etAddress"
+                android:textColorHint="#ffff"
+                style="@style/etStyle"
+                android:hint="@string/address" />
+
+            <EditText
+                android:id="@+id/etOrganisationtype"
+                android:textColorHint="#ffff"
+                style="@style/etStyle"
+                android:hint="@string/type_of_organisation" />
+
+            <TextView
+                android:id="@+id/tvNoemploye"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               android:layout_marginLeft="40dp"
+                android:layout_marginTop="5dp"
+                android:textSize="18sp"
+                android:text="@string/no_of_employees" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:id="@+id/rg1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical">
+
+
+                        <RadioButton
+                            android:id="@+id/rb1"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="@string/_1_20" />
+
+                        <RadioButton
+                            android:id="@+id/rb2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="@string/_21_50" />
+
+
+                        <RadioButton
+                            android:id="@+id/rb3"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="@string/_51_200" />
+
+
+                        <RadioButton
+                            android:id="@+id/rb4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="@string/_201_above" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/etComment"
+                style="@style/etStyle"
+                android:textColorHint="#ffff"
+                android:hint="@string/comment" />
+            <TextView
+                android:id="@+id/tvSocial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:text="@string/avoilable_on_online_media" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cbFacebook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="@string/facebook" />
+
+            <CheckBox
+                android:id="@+id/cbJustdial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/just_dial" />
+
+
+            <CheckBox
+                android:id="@+id/cbWebsite"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/website" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/etUrl"
+                style="@style/etStyle"
+                android:hint="@string/website_url"
+                android:textColorHint="#ffff"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvInterest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="5dp"
+                android:textSize="18sp"
+                android:text="@string/product_information" />
+
+
+            <RadioGroup
+                android:id="@+id/Info"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginLeft="45dp">
+
+                <RadioButton
+                    android:id="@+id/rbYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/yes" />
+
+                <RadioButton
+                    android:id="@+id/rbNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_weight="1"
+                    android:text="@string/no" />
+            </RadioGroup>
+
+
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp"
+                android:layout_gravity="center"
+               style="@style/btnStyle"
+                android:onClick="next"
+                android:text="@string/next" />
+
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+
